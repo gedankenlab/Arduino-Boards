@@ -2,13 +2,13 @@
 	path = bootloaders/caterina
 	url = https://github.com/keyboardio/Model01-Bootloader
 	branch = master
-[submodule "libraries/keyboardioScanner"]
-	path = libraries/keyboardioScanner
-	url = https://github.com/keyboardio/keyboardioScanner
+[submodule "libraries/KeyboardioScanner"]
+	path = libraries/KeyboardioScanner
+	url = https://github.com/keyboardio/KeyboardioScanner
 	branch = master
-[submodule "libraries/keyboardioHID"]
-	path = libraries/keyboardioHID
-	url = https://github.com/keyboardio/keyboardioHID
+[submodule "libraries/KeyboardioHID"]
+	path = libraries/KeyboardioHID
+	url = https://github.com/keyboardio/KeyboardioHID
 	branch = master
 [submodule "libraries/FingerprintUSBHost"]
 	path = libraries/FingerprintUSBHost
