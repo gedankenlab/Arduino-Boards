@@ -7,6 +7,9 @@
 [submodule "libraries/Arduino-HID"]
 	path = libraries/HID
 	url = https://github.com/keyboardio/Arduino-HID.git
+[submodule "toolchain"]
+	path = toolchain
+	url = https://github.com/keyboardio/Kaleidoscope-Prebuilt-Toolchain.git
 
 [submodule "libraries/Kaleidoglyph-Core"]
 	path = libraries/Kaleidoglyph-Core
