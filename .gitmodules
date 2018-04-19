@@ -8,7 +8,7 @@
 	path = libraries/HID
 	url = https://github.com/keyboardio/Arduino-HID.git
 
-[submodule "libraries/Kaleidoscope"]
+[submodule "libraries/Kaleidoglyph"]
 	path = libraries/Kaleidoglyph
 	url = https://github.com/gedankenlab/Kaleidoglyph-Core
 [submodule "libraries/Kaleidoglyph-Hardware-Model01"]
