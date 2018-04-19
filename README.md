@@ -21,5 +21,5 @@ you'll need to commit and push the changes in that repository
 To add a submodule, use a commandline like this:
 
 ```
-% git submodule add https://github.com/Keyboardio/Kaleidoscope-Plugin/ libraries/Kaleidoscope-Plugin
+% git submodule add https://github.com/Keyboardio/Kaleidoglyph-Plugin/ libraries/Kaleidoglyph-Plugin
 ```
