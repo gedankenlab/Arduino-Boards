@@ -2,7 +2,7 @@
 
 ifeq ($(BOARD_HARDWARE_PATH),)
 PLUGIN_TEST_SUPPORT_DIR =? ./build-tools
-KALEIDOGLYPH_BUILDER_DIR =? ./libraries/Kaleidoglyph/bin/
+KALEIDOGLYPH_BUILDER_DIR =? ./libraries/Kaleidoglyph-Core/bin/
 
 endif
 

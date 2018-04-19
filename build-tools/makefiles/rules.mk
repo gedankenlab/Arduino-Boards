@@ -2,7 +2,7 @@ EXTRA_BUILDER_ARGS="-libraries ."
 PLUGIN_TEST_SUPPORT_DIR ?= $(BOARD_HARDWARE_PATH)/keyboardio/avr/build-tools/
 PLUGIN_TEST_BIN_DIR ?= $(PLUGIN_TEST_SUPPORT_DIR)/$(shell arch)/bin
 
-KALEIDOSCOPE_BUILDER_DIR ?= $(BOARD_HARDWARE_PATH)/keyboardio/avr/libraries/Kaleidoscope/bin/
+KALEIDOGLYPH_BUILDER_DIR ?= $(BOARD_HARDWARE_PATH)/keyboardio/avr/libraries/Kaleidoglyph-Core/bin/
 
 TRAVIS_ARDUINO=arduino-1.8.2
 TRAVIS_ARDUINO_FILE = $(TRAVIS_ARDUINO)-linux64.tar.xz
@@ -18,7 +18,7 @@ TRAVIS_ARDUINO_DOWNLOAD_URL = http://downloads.arduino.cc/$(TRAVIS_ARDUINO_FILE)
 all: build-all
 	@: ## Do not remove this line, otherwise `make all` will trigger the `%` rule too.
 
-astyle:	
+astyle:
 	$(PLUGIN_TEST_SUPPORT_DIR)/run-astyle
 
 travis-test: travis-smoke-examples travis-check-astyle
@@ -26,7 +26,7 @@ travis-test: travis-smoke-examples travis-check-astyle
 test: smoke-examples check-astyle cpplint-noisy check-docs
 
 smoke-examples:
-	$(KALEIDOSCOPE_BUILDER_DIR)/kaleidoscope-builder build-all 
+	$(KALEIDOGLYPH_BUILDER_DIR)/kaleidoglyph-builder build-all
 
 check-docs:
 	doxygen $(PLUGIN_TEST_SUPPORT_DIR)/check-docs.conf 2> /dev/null >/dev/null
@@ -35,7 +35,7 @@ check-docs:
 check-astyle:
 	$(PLUGIN_TEST_SUPPORT_DIR)/run-astyle
 	$(PLUGIN_TEST_SUPPORT_DIR)/astyle-check
-	
+
 cpplint-noisy:
 	-$(PLUGIN_TEST_SUPPORT_DIR)/cpplint.py  --filter=-legal/copyright,-build/include,-readability/namespace,,-whitespace/line_length  --recursive --extensions=cpp,h,ino --exclude=$(BOARD_HARDWARE_PATH) --exclude=$(TRAVIS_ARDUINO) src examples
 
@@ -63,7 +63,7 @@ cpplint:
 travis-smoke-examples: travis-install-arduino
 	install -d ../current-libraries
 	ln -s $$(pwd) ../current-libraries/
-	ARDUINO_PATH="$(TRAVIS_ARDUINO_PATH)" BOARD_HARDWARE_PATH="$(BOARD_HARDWARE_PATH)" EXTRA_BUILDER_ARGS="-libraries $$(pwd)/../current-libraries" $(KALEIDOSCOPE_BUILDER_DIR)/kaleidoscope-builder build-all
+	ARDUINO_PATH="$(TRAVIS_ARDUINO_PATH)" BOARD_HARDWARE_PATH="$(BOARD_HARDWARE_PATH)" EXTRA_BUILDER_ARGS="-libraries $$(pwd)/../current-libraries" $(KALEIDOGLYPH_BUILDER_DIR)/kaleidoglyph-builder build-all
 	rm -rf ../current-libraries
 
 
@@ -71,8 +71,8 @@ travis-check-astyle:
 	PATH="$(PLUGIN_TEST_BIN_DIR):$(PATH)" $(PLUGIN_TEST_SUPPORT_DIR)/run-astyle
 	$(PLUGIN_TEST_SUPPORT_DIR)/astyle-check
 
-%:	
-	BOARD_HARDWARE_PATH="$(BOARD_HARDWARE_PATH)" $(KALEIDOSCOPE_BUILDER_DIR)/kaleidoscope-builder $@
+%:
+	BOARD_HARDWARE_PATH="$(BOARD_HARDWARE_PATH)" $(KALEIDOGLYPH_BUILDER_DIR)/kaleidoglyph-builder $@
 
 
 travis-install-arduino:

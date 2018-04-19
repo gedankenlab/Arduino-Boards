@@ -10,7 +10,7 @@ my $target = shift;
 
 # Third party libraries may fail our test suite. Since we don't have commit,
 # we complain but don't fail the whole run for that
-my @THIRD_PARTY_LIBRARIES = qw/Kaleidoscope-Hardware-Shortcut/;
+my @THIRD_PARTY_LIBRARIES = qw/Kaleidoglyph-Hardware-Shortcut/;
 
 my $pwd = `pwd`;
 chomp($pwd);
