@@ -1,6 +1,6 @@
 ## WARNING
 
-This is an experimental fork of the [Keyboardio Arduino-Boards](https://github.com/keyboardio/Arduino-Boards) repository. You probably want that repository instead, unless you're explicitly looking at the experimental event-driven design here.
+This is an experimental fork of the [Keyboardio Arduino-Boards](https://github.com/keyboardio/Arduino-Boards) repository. You probably want that repository instead, unless you're explicitly looking at the experimental event-driven design here. This fork is under rapid development, and I make no guarantees that the master branch is working at any time.
 
 ---
 
