@@ -27,3 +27,6 @@
 [submodule "libraries/Kaleidoglyph-Unshifter"]
 	path = libraries/Kaleidoglyph-Unshifter
 	url = https://github.com/gedankenlab/Kaleidoglyph-Unshifter.git
+[submodule "libraries/Kaleidoglyph-Glukeys"]
+	path = libraries/Kaleidoglyph-Glukeys
+	url = https://github.com/gedankenlab/Kaleidoglyph-Glukeys.git
