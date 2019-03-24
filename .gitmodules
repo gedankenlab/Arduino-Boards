@@ -33,3 +33,6 @@
 [submodule "libraries/Kaleidoglyph-HID"]
 	path = libraries/Kaleidoglyph-HID
 	url = https://github.com/gedankenlab/Kaleidoglyph-HID.git
+[submodule "libraries/Kaleidoglyph-Macros"]
+	path = libraries/Kaleidoglyph-Macros
+	url = https://github.com/gedankenlab/Kaleidoglyph-Macros.git
