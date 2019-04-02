@@ -4,5 +4,10 @@ BasedOnStyle: Google
 
 AlignConsecutiveAssignments: true
 AlignEscapedNewlines: Right
-ColumnLimit: 0
+BinPackArguments: false
+BinPackParameters: false
+ColumnLimit: 80
 FixNamespaceComments: true
+KeepEmptyLinesAtTheStartOfBlocks: true
+MaxEmptyLinesToKeep: 2
+ReflowComments: true
