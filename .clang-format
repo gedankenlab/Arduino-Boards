@@ -1,9 +1,13 @@
 # -*- yaml -*-
-
+---
 BasedOnStyle: Google
+---
+Language: Cpp
 
 AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
 AlignEscapedNewlines: Right
+AllowShortFunctionsOnASingleLine: Inline
 BinPackArguments: false
 BinPackParameters: false
 ColumnLimit: 80
