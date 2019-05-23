@@ -36,3 +36,6 @@
 [submodule "libraries/Kaleidoglyph-Macros"]
 	path = libraries/Kaleidoglyph-Macros
 	url = https://github.com/gedankenlab/Kaleidoglyph-Macros.git
+[submodule "libraries/Kaleidoglyph-Squeakeys"]
+	path = libraries/Kaleidoglyph-Squeakeys
+	url = https://github.com/gedankenlab/Kaleidoglyph-Squeakeys.git
